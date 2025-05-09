@@ -1,0 +1,56 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Eclipse / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+out/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+log/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.tar
+.env
+docker-compose.override.yml
+
+# Build tools
+.gradle/
+build/
+
+# Misc
+*.swp
+*~
+
+# Optional: exclude local config or secrets
+.env.local
+.secret
