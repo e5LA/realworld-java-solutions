@@ -1,6 +1,6 @@
 # RealWorld Java Systems
 
-A curated collection of **production-inspired Java systems** demonstrating real-world use cases, architectural patterns, and processing strategies — beyond simple CRUD.
+A practical set of **production-inspired Java projects** showing how to handle real-world use cases, architecture patterns, and processing logic — beyond simple CRUD
 
 
 Each system is **self-contained** and built using modern Java tooling, covering patterns like:
