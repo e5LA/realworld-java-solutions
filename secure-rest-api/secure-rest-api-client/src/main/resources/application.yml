@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: secure-rest-api-client
+server:
+  port: 8090
+
+keycloak:
+  token-uri: http://localhost:8081/realms/demo/protocol/openid-connect/token
+  client-id: secure-rest-api
+  client-secret: secure-api-secret # should come from secrets
+
+secure:
+  api:
+    endpoint: http://localhost:8080/products
+
+logging:
+  level:
+    root: INFO
