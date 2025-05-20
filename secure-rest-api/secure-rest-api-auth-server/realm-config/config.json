@@ -1,0 +1,55 @@
+{
+  "id": "9a621835-3066-44e7-bd1c-74ba294ce8b3",
+  "realm": "demo",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "id": "220670e5-85ab-4b1d-89e3-98880064e29f",
+        "name": "offline_access",
+        "description": "role_offline-access",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "9a621835-3066-44e7-bd1c-74ba294ce8b3"
+      },
+      {
+        "id": "80b567e4-46f1-482a-8f77-01d958fa3f5f",
+        "name": "READER",
+        "description": "demo reader access role",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "9a621835-3066-44e7-bd1c-74ba294ce8b3"
+      },
+      {
+        "id": "c3be31a1-2d15-4adf-ac16-bc5b962874cf",
+        "name": "uma_authorization",
+        "description": "role_uma_authorization",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "9a621835-3066-44e7-bd1c-74ba294ce8b3"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "secure-rest-api",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "secure-api-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "protocol": "openid-connect"
+    }
+  ],
+  "users": [
+    {
+      "username": "service-account-secure-rest-api",
+      "enabled": true,
+      "serviceAccountClientId": "secure-rest-api",
+      "realmRoles": [
+        "READER"
+      ]
+    }
+  ]
+}
