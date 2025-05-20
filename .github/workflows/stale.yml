@@ -1,0 +1,21 @@
+name: 'Comment on stale issues and PRs'
+on:
+  schedule:
+    - cron: '15 2 * * *'
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          stale-pr-message: 
+            This Pull Request has been marked as stale due to 30 days of inactivity.
+
+            It will be closed in 10 days if no further activity occurs. If this is not the intended, please comment on the PR or remove the label.
+          close-pr-message: 
+            This Pull Request has been closed due to prolonged inactivity.
+
+            If you believe this was done in error, feel free to reopen the PR or start a new one.
+          days-before-pr-stale: 30
+          days-before-pr-close: 10
+  
