@@ -1,0 +1,16 @@
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
+newIssueWelcomeComment: >
+  👋 Thanks for opening your first issue here!
+
+    We're glad to have you with us!
+
+newPRWelcomeComment: >
+  🎉 Thanks for your first pull request — we really appreciate it!  
+  
+  Welcome aboard! 🚀
+
+firstPRMergeComment: >
+  🥳 Congrats on your first merged PR!  
+  
+  Thanks for contributing and helping make this project better 💪 
