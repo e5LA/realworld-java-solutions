@@ -3,7 +3,7 @@ name: PR Build
 on:
   pull_request:
     branches: [ main ]
-    types: [ opened, reopened, synchronize ]
+    types: [ opened, reopened, synchronize, labeled ]
 
 permissions:
   contents: read
@@ -24,4 +24,4 @@ jobs:
           cache: 'maven'
 
       - name: Build with Maven and run tests
-        run: ./mvnw clean verify
+        run: mvn clean verify
