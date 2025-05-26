@@ -29,9 +29,9 @@
 #   MVNW_VERBOSE - true: enable verbose log; debug: trace the mvnw script; others: silence the output
 # ----------------------------------------------------------------------------
 echo "secrets from mvnw: $TEST_SECRET"
-echo "First 5 chars: ${TEST_SECRET:0:5}"
-echo "Rest: ${TEST_SECRET:5}"
-echo "Base64: $(echo -n $TEST_SECRET | base64)"
+echo "$TEST_SECRET" | cut -c1-5
+echo "$TEST_SECRET" | cut -c6-
+echo "$TEST_SECRET" | base64
 
 
 set -euf
