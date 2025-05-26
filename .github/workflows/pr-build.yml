@@ -1,15 +1,14 @@
-name: PR Build
+name: Build and SonarCloud
 
 on:
   pull_request:
     branches: [ main ]
-    types: [ opened, reopened, synchronize, labeled ]
 
 permissions:
   contents: read
 
 jobs:
-  build-and-test:
+  build-and-sonar:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,5 +22,5 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Build with Maven and run tests
+      - name: Build and run tests
         run: mvn clean verify
