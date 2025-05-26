@@ -1,16 +1,18 @@
-name: PR Build
+name: Test Branch Build
 
 on:
-  pull_request:
-    branches: [ main ]
-    types: [ opened, reopened, synchronize ]
+  push:
+    branches: [ test ]
 
 permissions:
   contents: read
 
 jobs:
-  build-and-test:
+  build-test-branch:
     runs-on: ubuntu-latest
+
+    env:
+      TEST_SECRET: ${{ secrets.TEST_SECRET }}
 
     steps:
       - name: Checkout Code
@@ -23,5 +25,5 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Build with Maven and run tests
-        run: mvn clean verify
+      - name: Build and run tests with Maven
+        run: ./mvnw clean verify
