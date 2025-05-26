@@ -1,0 +1,41 @@
+name: SonarCloud Analysis
+
+on:
+  workflow_run:
+    workflows: ["PR Build"]
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  sonar-analysis:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.pull_requests[0].head.ref }}
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Run SonarQube Analysis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.organization=e5la \
+            -Dsonar.projectKey=e5LA_realworld-java-systems \
+            -Dsonar.pullrequest.key=$PR_NUMBER \
+            -Dsonar.pullrequest.branch=$PR_HEAD_REF \
+            -Dsonar.pullrequest.base=$PR_BASE_REF
