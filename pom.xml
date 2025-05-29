@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.realworldjava</groupId>
-  <artifactId>realworld-java-systems</artifactId>
+  <artifactId>realworld-java-solutions</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>RealWorld Java Systems</name>
+  <name>RealWorld Java Solutions</name>
 
   <modules>
     <module>secure-rest-api</module>
