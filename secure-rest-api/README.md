@@ -1,9 +1,9 @@
 # Secure REST API with Spring Boot and Keycloak
 
-Production-inspired Java system demonstrating how to secure backend APIs using modern OAuth2 and Zero Trust principles — with **Spring Boot**, **Keycloak**, and **JWT-based authentication**.
+Production-inspired Java solutions demonstrating how to secure backend APIs using modern OAuth2 and Zero Trust principles — with **Spring Boot**, **Keycloak**, and **JWT-based authentication**.
 
 ---
-## 🗺️ System Architecture
+## 🗺️ Solution Architecture
 ```mermaid
 graph TD
     Client[Client] -->|client_credentials| Keycloak
@@ -14,7 +14,7 @@ graph TD
 
 ## 🧩 Use Case
 
-This system simulates a common **backend-to-backend integration scenario**, where one service securely calls another using OAuth2 and role-based access control.
+This solution simulates a common **backend-to-backend integration scenario**, where one service securely calls another using OAuth2 and role-based access control.
 
 For instance: A background job or microservice needs to access a secure API without user interaction.
 

@@ -1,17 +1,17 @@
-# RealWorld Java Systems
+# RealWorld Java Solutions
 
-A practical set of **production-inspired Java systems** showing how to handle real-world use cases, architectural patterns, and processing strategies — beyond simple CRUD.
+A practical set of **production-inspired Java solutions** showing how to handle real-world use cases, architectural patterns, and processing strategies — beyond simple CRUD.
 
 
 ---
 
 ## Why This Project?
 
-Most open-source Java examples are limited to basic CRUD or demo apps. This repository bridges that gap by showing real-world backend systems that reflect the complexity and design choices faced by experienced engineers.
+Most open-source Java examples are limited to basic CRUD or demo apps. This repository bridges that gap by showing real-world backend solutions that reflect the complexity and design choices faced by experienced engineers.
 
 ---
 
-##  Systems
+##  Solutions
 Each module below is a self-contained, real-world example:
 
 
