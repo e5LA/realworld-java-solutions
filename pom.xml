@@ -21,7 +21,7 @@
     <!-- Dependencies -->
     <spring-boot.version>3.5.0</spring-boot.version>
     <spring-security-test.version>6.5.0</spring-security-test.version>
-    <junit-jupiter.version>5.12.2</junit-jupiter.version>
+    <junit-jupiter.version>5.13.0</junit-jupiter.version>
     <mockito-junit-jupiter.version>5.18.0</mockito-junit-jupiter.version>
 
     <!-- Plugins -->
