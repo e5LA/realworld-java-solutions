@@ -23,9 +23,7 @@
     <spring-boot.version>3.5.2</spring-boot.version>
     <spring-security-test.version>6.5.0</spring-security-test.version>
     <postgresql.version>42.7.6</postgresql.version>
-
-
-    <junit-jupiter.version>5.12.2</junit-jupiter.version>
+    <junit-jupiter.version>5.13.1</junit-jupiter.version>
     <mockito-junit-jupiter.version>5.18.0</mockito-junit-jupiter.version>
     <spring-batch-test.version>5.2.2</spring-batch-test.version>
     <h2database.version>2.3.232</h2database.version>
