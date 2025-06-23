@@ -10,8 +10,8 @@
   <name>RealWorld Java Solutions</name>
 
   <modules>
-    <module>secure-rest-api</module>
     <module>batch-processing</module>
+    <module>secure-rest-api</module>
   </modules>
 
   <properties>

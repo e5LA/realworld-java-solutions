@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>secure-rest-api</artifactId>
+  <name>Secure REST API solution</name>
   <packaging>pom</packaging>
   <modules>
     <module>secure-rest-api-auth-server</module>

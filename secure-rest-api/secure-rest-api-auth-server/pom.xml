@@ -8,4 +8,6 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>secure-rest-api-auth-server</artifactId>
+  <name>Secure REST API Auth Server</name>
+
 </project>
