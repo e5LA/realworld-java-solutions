@@ -46,6 +46,6 @@ class TimesheetRepositoryTest {
 
     // then
     assertThat(results).hasSize(1);
-    assertThat(results.getContent().get(0).getEmployeeId()).isEqualTo(3L);
+    assertThat(results.getContent().getFirst().getEmployeeId()).isEqualTo(3);
   }
 }

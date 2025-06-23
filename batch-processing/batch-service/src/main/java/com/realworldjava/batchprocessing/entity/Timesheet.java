@@ -10,10 +10,10 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "timesheets")
 public class Timesheet {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-
   private Integer employeeId;
   private BigDecimal hours;
   private BigDecimal overtime;
