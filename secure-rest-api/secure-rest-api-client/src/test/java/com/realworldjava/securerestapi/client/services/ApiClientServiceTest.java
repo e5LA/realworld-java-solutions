@@ -39,7 +39,6 @@ class ApiClientServiceTest {
   void setup() {
     apiClientService = new ApiClientService(restClient, API_ENDPOINT);
 
-    // Set up the mock chain
     when(restClient.get()).thenReturn(requestHeadersUriSpec);
     when(requestHeadersUriSpec.uri(API_ENDPOINT)).thenReturn(requestHeadersSpec);
     when(requestHeadersSpec.header(AUTHORIZATION, EXPECTED_AUTH_HEADER)).thenReturn(
@@ -50,14 +49,14 @@ class ApiClientServiceTest {
 
   @Test
   void callApi_logsResponse_whenTokenValid() {
-    // Arrange
+    // given
     String expectedResponse = "{\"status\": \"success\"}";
     when(responseSpec.body(String.class)).thenReturn(expectedResponse);
 
-    // Act
+    // when
     assertDoesNotThrow(() -> apiClientService.callApi(AUTH_TOKEN));
 
-    // Assert
+    // then
     verify(restClient).get();
     verify(requestHeadersUriSpec).uri(API_ENDPOINT);
     verify(requestHeadersSpec).header(HttpHeaders.AUTHORIZATION, EXPECTED_AUTH_HEADER);
