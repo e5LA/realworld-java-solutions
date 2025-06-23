@@ -15,9 +15,10 @@ Most open-source Java examples are limited to basic CRUD or demo apps. This repo
 Each module below is a self-contained, real-world example:
 
 
-| Module | Patterns Demonstrated | Description |
-|--------|------------------------|-------------|
-| [secure-rest-api](./secure-rest-api/README.md) | JWT, RBAC, OAuth2, service-to-service | Secured REST API with Keycloak and role-based authorization |
+| Module | Patterns Demonstrated | Description                                                                                   |
+|--------|------------------------|-----------------------------------------------------------------------------------------------|
+| [batch-processing](./batch-processing/README.md) | Spring Batch, chunk processing, JPA, scheduling | Scheduled salary processing job using chunk-oriented batch with PostgresSQL-backed read/write |
+| [secure-rest-api](./secure-rest-api/README.md) | JWT, RBAC, OAuth2, service-to-service | Secured REST API with Keycloak and role-based authorization                                   |
 
 
 --- 
