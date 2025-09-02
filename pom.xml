@@ -31,7 +31,7 @@
 
     <!-- Plugins -->
     <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
-    <sonar-maven-plugin.version>5.1.0.4751</sonar-maven-plugin.version>
+    <sonar-maven-plugin.version>5.2.0.4988</sonar-maven-plugin.version>
   </properties>
 
   <dependencyManagement>
