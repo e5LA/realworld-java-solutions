@@ -21,7 +21,7 @@
 
     <!-- Dependencies -->
     <spring-boot.version>3.5.5</spring-boot.version>
-    <spring-security-test.version>6.5.3</spring-security-test.version>
+    <spring-security-test.version>6.5.5</spring-security-test.version>
 
     <postgresql.version>42.7.7</postgresql.version>
     <junit-jupiter.version>5.13.4</junit-jupiter.version>
