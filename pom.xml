@@ -26,7 +26,7 @@
     <postgresql.version>42.7.8</postgresql.version>
     <junit-jupiter.version>5.13.4</junit-jupiter.version>
     <mockito-junit-jupiter.version>5.20.0</mockito-junit-jupiter.version>
-    <spring-batch-test.version>5.2.2</spring-batch-test.version>
+    <spring-batch-test.version>5.2.3</spring-batch-test.version>
     <h2database.version>2.3.232</h2database.version>
 
     <!-- Plugins -->
