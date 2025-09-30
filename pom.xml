@@ -27,7 +27,7 @@
     <junit-jupiter.version>5.13.4</junit-jupiter.version>
     <mockito-junit-jupiter.version>5.20.0</mockito-junit-jupiter.version>
     <spring-batch-test.version>5.2.3</spring-batch-test.version>
-    <h2database.version>2.3.232</h2database.version>
+    <h2database.version>2.4.240</h2database.version>
 
     <!-- Plugins -->
     <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
